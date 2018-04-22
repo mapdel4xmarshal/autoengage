@@ -1,0 +1,7 @@
+<span class="count_top {{mk}}"><i class="fa fa-user"></i> {{metric.title}}</span>
+<div ng-if="!metric.loading" class="count">{{data2.value | normalizeValues}}</div>
+<span class="count_bottom" ng-if="!metric.loading"><i class="{{metric.class}}">
+    <percent-template theClass="metric.class">{{metric.class}}</percent-template>
+    {{metric.percentChange}}% </i> from yesterday
+</span>     
+<div class="count" ng-if="metric.loading"><img class="loadingMedium" src="images/loading2.gif"/></div>

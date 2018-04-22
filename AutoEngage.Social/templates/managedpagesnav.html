@@ -1,0 +1,4 @@
+<a><i class="fa fa-files-o fa-fw"></i> Managed Pages <span class="badge" {{mplCtrl.managedPages.length}}></span><span class="fa fa-chevron-down"></span></a>
+<ul class="nav child_menu" ng-controller="tileMetricController as tmCtrl">
+    <li ng-repeat="page in mplCtrl.managedPages" ng-onclick="tmCtrl.getMetric(page.facebookPageID)">{{page.facebookPageID}}</li>
+</ul>

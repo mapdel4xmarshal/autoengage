@@ -1,0 +1,35 @@
+.modal  {
+    /*   display: block;*/
+    padding-right: 0px;
+    background-color: rgba(4, 4, 4, 0.8); 
+    z-index: 99999999999;
+}
+
+.modal-dialog {
+    top: 30%;
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+}
+
+.modal-content {
+    border-radius: 0px;
+    border: none;
+    top: 40%;
+}
+
+.modal-body {
+    background-color: #172D44;
+    color: white;
+    text-align:center;
+    max-width: 300px;
+}
+
+@media (min-width: 576px).modal-dialog {
+    /* max-width: 500px; */
+    margin: 30px auto;
+}
+
+@media (min-width: 992px).modal-lg {
+    /* max-width: 800px; */
+}
